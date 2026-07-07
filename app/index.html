@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textpad++</title>
+    <script>
+        window.MonacoEnvironment = {
+            getWorkerUrl: function (moduleId, label) {
+                return 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/editor/editor.worker.js';
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
